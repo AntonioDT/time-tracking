@@ -218,7 +218,7 @@ h1, h2, h3, p {
 }
 
 .report-container .reports-card .card.work .card-header {
-  background-image: url("images/icon-work.svg");
+  background-image: url("/images/icon-work.svg");
 }
 
 .report-container .reports-card .card.play {
@@ -226,7 +226,7 @@ h1, h2, h3, p {
 }
 
 .report-container .reports-card .card.play .card-header {
-  background-image: url("images/icon-play.svg");
+  background-image: url("/images/icon-play.svg");
 }
 
 .report-container .reports-card .card.study {
@@ -234,7 +234,7 @@ h1, h2, h3, p {
 }
 
 .report-container .reports-card .card.study .card-header {
-  background-image: url("images/icon-study.svg");
+  background-image: url("/images/icon-study.svg");
 }
 
 .report-container .reports-card .card.exercise {
@@ -242,7 +242,7 @@ h1, h2, h3, p {
 }
 
 .report-container .reports-card .card.exercise .card-header {
-  background-image: url("images/icon-exercise.svg");
+  background-image: url("/images/icon-exercise.svg");
   background-position: 95% !important;
 }
 
@@ -251,7 +251,7 @@ h1, h2, h3, p {
 }
 
 .report-container .reports-card .card.social .card-header {
-  background-image: url("images/icon-social.svg");
+  background-image: url("/images/icon-social.svg");
 }
 
 .report-container .reports-card .card.self-care {
@@ -259,7 +259,7 @@ h1, h2, h3, p {
 }
 
 .report-container .reports-card .card.self-care .card-header {
-  background-image: url("images/icon-self-care.svg");
+  background-image: url("/images/icon-self-care.svg");
 }
 
 @media (min-width: 1440px) {
