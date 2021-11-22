@@ -117,38 +117,38 @@
             &.work {
                 background-color: $lightOrange;
                 .card-header {
-                    background-image: url("../../images/icon-work.svg");
+                    background-image: url("../images/icon-work.svg");
                 }
             }
             &.play {
                 background-color: $softBlue;
                 .card-header {
-                    background-image: url("../../images/icon-play.svg");
+                    background-image: url("../images/icon-play.svg");
                 }
             }
             &.study {
                 background-color: $lightRed;
                 .card-header {
-                    background-image: url("../../images/icon-study.svg");
+                    background-image: url("../images/icon-study.svg");
                 }
             }
             &.exercise {
                 background-color: $limeGreen;
                 .card-header {
-                    background-image: url("../../images/icon-exercise.svg");
+                    background-image: url("../images/icon-exercise.svg");
                     background-position: 95% !important;
                 }
             }
             &.social {
                 background-color: $violet;
                 .card-header {
-                    background-image: url("../../images/icon-social.svg");
+                    background-image: url("../images/icon-social.svg");
                 }
             }
             &.self-care {
                 background-color: $softOrange;
                 .card-header {
-                    background-image: url("../../images/icon-self-care.svg");
+                    background-image: url("../images/icon-self-care.svg");
                 }
             }
             @media (min-width: $breakpoint-large) {
