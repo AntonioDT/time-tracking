@@ -1,0 +1,223 @@
+@import "globals";
+@import "variables";
+
+.page-wrapper {
+    height: 100%;
+    display: flex;
+    justify-content: center;
+} 
+
+.body-wrapper {
+    padding: 60px 20px;
+    max-width: $breakpoint-small;
+    @media (min-width: $breakpoint-large) {
+        padding: 200px 200px;
+        max-width: 1440px;
+    }
+}
+
+.report-container {
+    @media (min-width: $breakpoint-large) {
+        display: flex;
+    };
+    .card-profile {
+        border-radius: 10px;
+        background-color: $darkBlue;
+        @media (min-width: $breakpoint-large) {
+            width: 220px;
+        };
+        .card-body {
+            background-color: $blue;
+            border-radius: 10px;
+            .profile-info {
+                padding: 30px;
+                display: flex;
+                @media (min-width: $breakpoint-large) {
+                    display: block;
+                    padding: 30px 50px 30px 30px;
+                };
+                img {
+                    height: 70px;
+                    margin-right: 15px;
+                    border: 4px solid white;
+                    border-radius: 50%;
+                    @media (min-width: $breakpoint-large) {
+                        margin: 0 0 30px;
+                    };
+                }
+                .text {
+                    align-self: center;
+                    p {
+                        color: $paleBlue;
+                        font-size: 14px;
+                        &:not(:last-child) {
+                            margin-bottom: 10px;
+                            @media (min-width: $breakpoint-large) {
+                                margin-bottom: 5px;
+                            };
+                        }
+                        &.name {
+                            color: white;
+                            font-size: 24px;
+                            font-weight: 100;
+                            @media (min-width: $breakpoint-large) {
+                               font-size: 36px;
+                            };
+                        }
+                    }
+                }
+            }
+        }
+        .card-footer {
+            padding: 30px 15px 30px 30px;
+            .period {
+                display: flex;
+                justify-content: space-between;
+                margin: 0;
+                padding: 0;
+                @media (min-width: $breakpoint-large) {
+                    display: block;
+                };
+                li {
+                    list-style: none;
+                    color: white;
+                    opacity: 0.4;
+                    cursor: pointer;
+                    &.selected {
+                        opacity: 1;
+                    }
+                    &:hover {
+                        opacity: 1;
+                    }
+                    @media (min-width: $breakpoint-large) {
+                        &:not(:last-child) {
+                            margin-bottom: 20px
+                        }
+                    };
+                }
+            }
+        }
+    }
+    .reports-card {
+        margin-top: 30px;
+        @media (min-width: $breakpoint-large) {
+            margin-top: 0;
+            margin-left: 30px;
+            display: flex;
+            flex-wrap: wrap;
+            column-gap: 20px;
+            row-gap: 20px;
+        };
+        .card {
+            border-radius: 10px;
+            position: relative;
+            &:not(:last-child) {
+                margin-bottom: 30px;
+            }
+            &.work {
+                background-color: $lightOrange;
+                .card-header {
+                    background-image: url("../../images/icon-work.svg");
+                }
+            }
+            &.play {
+                background-color: $softBlue;
+                .card-header {
+                    background-image: url("../../images/icon-play.svg");
+                }
+            }
+            &.study {
+                background-color: $lightRed;
+                .card-header {
+                    background-image: url("../../images/icon-study.svg");
+                }
+            }
+            &.exercise {
+                background-color: $limeGreen;
+                .card-header {
+                    background-image: url("../../images/icon-exercise.svg");
+                    background-position: 95% !important;
+                }
+            }
+            &.social {
+                background-color: $violet;
+                .card-header {
+                    background-image: url("../../images/icon-social.svg");
+                }
+            }
+            &.self-care {
+                background-color: $softOrange;
+                .card-header {
+                    background-image: url("../../images/icon-self-care.svg");
+                }
+            }
+            @media (min-width: $breakpoint-large) {
+                margin-bottom: 0 !important;
+                width: 30%;
+                cursor: pointer;
+            };
+            .card-header {
+                padding: 20px 0;
+                background-repeat: no-repeat;
+                background-position: 95% -15px;
+            }
+            .card-body {
+                padding: 30px 15px 30px 30px;
+                @media (min-width: $breakpoint-large) {
+                    padding: 30px;
+                };
+                border-radius: 10px;
+                background-color: $darkBlue;
+                .title-option {
+                    margin-bottom: 10px;
+                    @media (min-width: $breakpoint-large) {
+                        margin-bottom: 20px;
+                    };
+                    .title {
+                        font-size: 18px;
+                        color: white;
+                    }
+                    .option {
+                        cursor: pointer;
+                    }
+                }
+                .timeframes {
+                    display: flex;
+                    justify-content: space-between;
+                    align-items: center;
+                    @media (min-width: $breakpoint-large) {
+                        display: block;
+                    };
+                    .current {
+                        color: white;
+                        font-size: 28px;
+                        font-weight: 100;
+                        @media (min-width: $breakpoint-large) {
+                            margin-bottom: 10px;
+                        };
+                    }
+                    .previous {
+                        color: $paleBlue;
+                    }
+                }
+            }
+            .card-overlay {
+                position: absolute;
+                opacity: 0;
+                transition: .2s ease-in;
+                top: 0;
+                left: 50%;
+                width: 100%;
+                height: 100%;
+                border-radius: 10px;
+                transform: translateX(-50%);
+            }
+            &:hover {
+                .card-overlay {
+                    opacity: 0.1;
+                    background-color: white;
+                }
+            }
+        }
+    }
+}

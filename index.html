@@ -1,0 +1,135 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"> <!-- displays site properly based on user's device -->
+
+  <link rel="icon" type="image/png" sizes="32x32" href="./images/favicon-32x32.png">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Rubik:wght@300;400;500&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="dist/style.css">
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.1.0/jquery.min.js"></script>
+  
+  <title>Frontend Mentor | Time tracking dashboard</title>
+</head>
+<body>
+  <div class="page-wrapper flex flex-center">
+    <div class="body-wrapper">
+      <div class="report-container">
+        <div class="card-profile">
+          <div class="card-body">
+            <div class="profile-info">
+              <img src="images/image-jeremy.png" alt="profile-img">
+              <div class="text">
+                <p>Report for</p>
+                <p class="name">Jeremy Robson</p>
+              </div>
+            </div>
+          </div>
+          <div class="card-footer">
+            <ul class="period" onclick="choosePeriod(event)">
+              <li class="period-to-select">Daily</li>
+              <li class="period-to-select selected">Weekly</li>
+              <li class="period-to-select">Monthly</li>
+            </ul>
+          </div>
+        </div>
+        <div class="reports-card">
+          <div class="card work">
+            <div class="card-header">
+            </div>
+            <div class="card-body">
+              <div class="title-option flex flex-between">
+                <div class="title">Work</div>
+                <div class="option"><img src="images/icon-ellipsis.svg"></div>
+              </div>
+              <div class="timeframes">
+                <div class="current"></div>
+                <div class="previous"></div>
+              </div>
+            </div>
+            <div class="card-overlay"></div>
+          </div>
+          <div class="card play">
+            <div class="card-header">
+            </div>
+            <div class="card-body">
+              <div class="title-option flex flex-between">
+                <div class="title">Play</div>
+                <div class="option"><img src="images/icon-ellipsis.svg"></div>
+              </div>
+              <div class="timeframes">
+                <div class="current"></div>
+                <div class="previous"></div>
+              </div>
+            </div>
+            <div class="card-overlay"></div>
+          </div>
+          <div class="card study">
+            <div class="card-header">
+            </div>
+            <div class="card-body">
+              <div class="title-option flex flex-between">
+                <div class="title">Study</div>
+                <div class="option"><img src="images/icon-ellipsis.svg"></div>
+              </div>
+              <div class="timeframes">
+                <div class="current"></div>
+                <div class="previous"></div>
+              </div>
+            </div>
+            <div class="card-overlay"></div>
+          </div>
+          <div class="card exercise">
+            <div class="card-header">
+            </div>
+            <div class="card-body">
+              <div class="title-option flex flex-between">
+                <div class="title">Exercise</div>
+                <div class="option"><img src="images/icon-ellipsis.svg"></div>
+              </div>
+              <div class="timeframes">
+                <div class="current"></div>
+                <div class="previous"></div>
+              </div>
+            </div>
+            <div class="card-overlay"></div>
+          </div>
+          <div class="card social">
+            <div class="card-header">
+            </div>
+            <div class="card-body">
+              <div class="title-option flex flex-between">
+                <div class="title">Social</div>
+                <div class="option"><img src="images/icon-ellipsis.svg"></div>
+              </div>
+              <div class="timeframes">
+                <div class="current"></div>
+                <div class="previous"></div>
+              </div>
+            </div>
+            <div class="card-overlay"></div>
+          </div>
+          <div class="card self-care">
+            <div class="card-header">
+            </div>
+            <div class="card-body">
+              <div class="title-option flex flex-between">
+                <div class="title">Self Care</div>
+                <div class="option"><img src="images/icon-ellipsis.svg"></div>
+              </div>
+              <div class="timeframes">
+                <div class="current"></div>
+                <div class="previous"></div>
+              </div>
+            </div>
+            <div class="card-overlay"></div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+  <script src="app/js/script.js"></script>
+</body>
+</html>
